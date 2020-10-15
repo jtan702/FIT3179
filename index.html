@@ -9,14 +9,18 @@
 </head>
 <body>
 
-<div id="vis"></div>
+<div id="example_bar"></div>
+<div id="example_geo"></div>
 
 <script type="text/javascript">
   var spec = "https://raw.githubusercontent.com/jtan702/FIT3179/master/visualization.vl.json";
-  vegaEmbed('#vis', spec).then(function(result) {
+  vegaEmbed('#example_bar', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
+  var = spec2 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/americageo.json"
+   vegaEmbed('#example_geo', spec2).then(function(result) {
+  }).catch(console.error);
 </script>
 
 </body>
