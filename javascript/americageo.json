@@ -7,8 +7,8 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/america_geo.topojson",
-        "format": {"type": "topojson", "feature": "america"}
+        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/america_geo.json",
+        "format": {"type": "json", "feature": "america"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     }]
