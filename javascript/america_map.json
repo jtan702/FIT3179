@@ -20,12 +20,12 @@
       "longitude": {"field": "longitude", "type": "quantitative"},
       "latitude": {"field": "latitude", "type": "quantitative"},
       "size": {
-        "field": "mag",
+        "field": "distance",
         "type": "quantitative",
         "scale": {"domain": [4, 8]}
       },
       "color": {
-        "field": "depth",
+        "field": "distance",
         "type": "quantitative",
         "scale": {"scheme": "reds"}
       }
