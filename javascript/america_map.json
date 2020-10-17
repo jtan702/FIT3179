@@ -22,7 +22,7 @@
       "size": {
         "field": "distance",
         "type": "quantitative",
-        "scale": {"domain": [4, 8]}
+        "scale": {"domain": [1, 2]}
       },
       "color": {
         "field": "distance",
