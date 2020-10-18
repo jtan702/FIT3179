@@ -10,6 +10,7 @@
         "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/america_map.topojson",
         "format": {"type": "topojson", "feature": "america_map"}
       },
+      "transform": [{"filter": {"field": "continent_code", "equal": "NA"}}],
       "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
     },
     {"data": {
