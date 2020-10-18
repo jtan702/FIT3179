@@ -9,11 +9,15 @@
 </head>
 <body>
 
-<div id="map"></div>
+<div id="map1"></div>
+<div id="map2"></div>
 
 <script type="text/javascript">
-  var spec = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/week9.json";
-  vegaEmbed('#map', spec).then(function(result) {
+  var spec1 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/week9_map1.json";
+  vegaEmbed('#map1', spec1).then(function(result) {
+  }).catch(console.error);
+  var spec2 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/week9_map2.json";
+  vegaEmbed('#map2', spec2).then(function(result) {
   }).catch(console.error);
 </script>
 
