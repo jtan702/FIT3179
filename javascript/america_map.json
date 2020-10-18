@@ -17,7 +17,7 @@
       "data": {
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
     },
-    "transform": [{"filter": {"field": "datum.continent_code", "equal": "NA"}}],
+    "transform": [{"filter": {"field": "continent_code", "equal": "NA"}}],
     "mark": {"type": "circle", "tooltip": {"content": "data"}},
     "encoding": {
       "longitude": {"field": "longitude", "type": "quantitative"},
