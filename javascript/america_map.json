@@ -11,18 +11,7 @@
         "format": {"type": "topojson", "feature": "america_map"}
       },
       "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
-    },
-    {"data": {
-      "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
-    },
-    "mark": {"type": "circle", "tooltip": {"content": "data"}},
-    "encoding": {
-      "longitude": {"field": "longitude", "type": "quantitative"},
-      "latitude": {"field": "latitude", "type": "quantitative"},
-      "size": {"value": 10},
-      "color": {"value": "red"}
     }
-  }
   ]
 }
 
