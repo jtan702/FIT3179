@@ -19,7 +19,7 @@
     "encoding": {
       "longitude": {"field": "longitude", "type": "quantitative"},
       "latitude": {"field": "latitude", "type": "quantitative"},
-      "size": {"value": 10},
+      "size": {"value": 1},
       "color": {"value": "red"}
     }
   }
