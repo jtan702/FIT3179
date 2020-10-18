@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 500,
+  "title": "Landslide Locations in United states",
+  "projection": {"type": "albersUsa"},
+  "layer": [
+    {"data": {
+        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/usa_map.topojson",
+        "format": {"type": "topojson", "feature": "usa_map"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
+    },
+    {"data": {
+
+      "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
+    },
+    
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "transform": [{"filter": {"field": "country_name", "equal": "United States"}}],
+      "projection": {"type": "albersUsa"},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {"value": 3},
+        "color": {"value": "red"}
+      }
+    }
+  ]
+}
+
