@@ -6,8 +6,8 @@
   "projection": {"type": "equalEarth"},
   "layer": [
     {"data": {
-        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/america_map.topojson",
-        "format": {"type": "topojson", "feature": "america_map"}
+        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/usa_map.topojson",
+        "format": {"type": "topojson", "feature": "usa_map"}
       },
       "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
     },
