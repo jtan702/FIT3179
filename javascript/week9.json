@@ -3,7 +3,7 @@
   "width": 800,
   "height": 500,
   "title": "Landslide Locations in United states",
-  "projection": {"type": "equalEarth"},
+  "projection": {"type": "albersUsa"},
   "layer": [
     {"data": {
         "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/usa_map.topojson",
@@ -15,7 +15,9 @@
 
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
     },
+    
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "transform": [{"filter": {"field": "continent_code", "equal": "NA"}}],
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
