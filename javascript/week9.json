@@ -17,7 +17,7 @@
     },
     
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
-      "transform": [{"filter": {"field": "continent_code", "equal": "NA"}}],
+      "transform": [{"filter": {"field": "country_code", "equal": "United States"}}],
       "projection": {"type": "albersUsa"},
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
