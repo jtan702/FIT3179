@@ -12,7 +12,9 @@
       "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
     },
 
+
     {"data": {
+
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
     },
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
@@ -21,8 +23,8 @@
         "latitude": {"field": "latitude", "type": "quantitative"},
         "size": {"value": 1},
         "color": {"value": "red"}
+      }
     }
-  }
   ]
 }
 
