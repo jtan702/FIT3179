@@ -16,7 +16,6 @@
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
     },
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
-      "transform": [{"filter": {"field": "country_name", "equal": "United States"}}],
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
