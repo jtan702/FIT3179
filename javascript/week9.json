@@ -11,8 +11,6 @@
       },
       "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
     },
-
-
     {"data": {
 
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
