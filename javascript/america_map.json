@@ -5,24 +5,22 @@
   "title": "Map of America",
   "projection": {"type": "equalEarth"},
   "layer": [
-    {
-      "data": {
+    {"data": {
         "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/america_map.topojson",
         "format": {"type": "topojson", "feature": "america_map"}
       },
       "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}
     },
 
-    {
-      "data": {
+    {"data": {
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
     },
-    "mark": {"type": "circle", "tooltip": {"content": "data"}},
-    "encoding": {
-      "longitude": {"field": "longitude", "type": "quantitative"},
-      "latitude": {"field": "latitude", "type": "quantitative"},
-      "size": {"value": 1},
-      "color": {"value": "red"}
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {"value": 1},
+        "color": {"value": "red"}
     }
   }
   ]
