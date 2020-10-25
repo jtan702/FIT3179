@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 500,
+  "title": "Number of Landslides per state",
+  "data": {
+      "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv"
+      },
+      "transform": [
+        {"filter": { "field": "country_name", "equal": "United States"}}
+      ],
+      "encoding": {
+        "x": {"field": "state/province", "type":"quantitative", "aggregate": "count"},
+        "y": {"field": "state/province", "type": "nominal", "sort": "-x"}
+      },
+  "layer":[
+    {
+      "mark":"bar"
+    },
+    {
+    "mark": {
+      "type": "text",
+      "align": "left",
+      "fontSize": 12
+    },
+    "encoding": {
+      "text": {"field": "state/province", "type": "quantitative", "aggregate": "count"},
+      "color": {"value": "black"}
+    }}
+  ]
+}
