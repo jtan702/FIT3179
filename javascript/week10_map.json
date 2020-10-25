@@ -17,7 +17,7 @@
         "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/usa_map.topojson",
         "format": {"type": "topojson", "feature": "usa_map"}
       },
-      "mark": {"type": "geoshape", "fill": "#fafafa", "stroke": "black"}
+      "mark": {"type": "geoshape", "fill": "#000000aa", "stroke": "#000000"}
     },
     {"data": {
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
@@ -31,7 +31,7 @@
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
-        "size": {"value": 50},
+        "size": {"value": 25},
         "color": {"field": "landslide_type", "type": "nominal",
         "scale": {
           "domain": ["Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
