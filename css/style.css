@@ -30,17 +30,17 @@ body{
     line-height: 2px;
 }
 
-.graphContainer-1{
+#graphContainer-1{
     display: flex;
     justify-content: space-around;
     padding: 5px 4px 5px 4px
 }
 
-.graph-1{
+#graph-1{
     border: 1px solid black;
     flex-basis: 49%;
 }
-.graph-2{
+#graph-2{
     border: 1px solid black;
     flex-basis: 49%;
 }
