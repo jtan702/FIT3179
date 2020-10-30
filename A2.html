@@ -19,26 +19,19 @@
     </header>
 
     <div id="graphContainer-1"> 
-        <div id="graph-1">
-            <h3>Graph1</h3>
-            <small>small graph 1 tag</small>
-            <p>insert paragraph here</p>
-        </div>
-        <div id="graph-2">
-            <h3>Graph2</h3>
-            <small>small graph 2 tag</small>
-            <p>insert paragraph here</p>
-        </div>        
+        <div id="dotmap-1"></div>
+        <div id="choropleth-1"></div>
+        <div id="bar-1"></div>        
     </div>
 
     <script type="text/javascript">
 
-        var spec1 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_graph1.json";
-        vegaEmbed('#graph-1', spec1).then(function(result) {
+        var spec1 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_dotmap1.json";
+        vegaEmbed('#dotmap-1', spec1).then(function(result) {
         }).catch(console.error);
         
-        var spec2 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_graph2.json";
-        vegaEmbed('#graph-2', spec2).then(function(result) {
+        var spec2 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_choropleth1.json";
+        vegaEmbed('#choropleth-1', spec2).then(function(result) {
         }).catch(console.error);
         
       </script>
