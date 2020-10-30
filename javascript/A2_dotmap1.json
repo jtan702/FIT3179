@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Landslide Locations in United States",
-  "width": 550,
-  "height": 550,
+  "width": 900,
+  "height": 600,
   "projection": {"type": "albersUsa"},
   "params":[{
   "name": "type_selection",
@@ -10,7 +10,7 @@
     "input": "select",
     "options": [null,"Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
     "labels": ["Show all","Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
-    "name": "Type of landslide:"}
+    "name": "Select type of landslide:"}
     }],
   "layer": [
     {"data": {
@@ -33,6 +33,7 @@
         "latitude": {"field": "latitude", "type": "quantitative"},
         "size": {"value": 25},
         "color": {"field": "landslide_type", "type": "nominal",
+        "title": "Type of Landslide",
         "scale": {
           "domain": ["Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
           "range": ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928"]}

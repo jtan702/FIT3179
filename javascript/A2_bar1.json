@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 550,
   "height": 550,
+  "title": "Number of Landslides per State",
   "data": {
       "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv"
       },
@@ -14,8 +15,7 @@
       },
   "layer":[
     {
-      "mark":"bar",
-      "title": "Number of Landslides per state"
+      "mark":"bar"
     },
     {
     "mark": {
