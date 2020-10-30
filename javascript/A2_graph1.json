@@ -2,30 +2,46 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 800,
   "height": 500,
-  "data": {
-      "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv"
+  "title": "Landslide Locations in United States",
+  "projection": {"type": "albersUsa"},
+  "params":[{
+  "name": "type_selection",
+  "bind": {
+    "input": "select",
+    "options": [null,"Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
+    "labels": ["Show all","Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
+    "name": "Type of landslide:"}
+    }],
+  "layer": [
+    {"data": {
+        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/usa_map.topojson",
+        "format": {"type": "topojson", "feature": "usa_map"}
+      },
+      "mark": {"type": "geoshape", "fill": "#000000aa", "stroke": "#000000"}
+    },
+    {"data": {
+      "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv" 
       },
       "transform": [
-        {"filter": { "field": "country_name", "equal": "United States"}}
-      ],
+        {"filter": {"field": "country_name", "equal": "United States"}},
+        {"filter": "type_selection == null || datum.landslide_type == type_selection"}
+        ],
+      "mark": {"type": "circle"},
+      "projection": {"type": "albersUsa"},
       "encoding": {
-        "x": {"field": "state/province", "type":"quantitative", "aggregate": "count", "title": "Number of Landslides"},
-        "y": {"field": "state/province", "type": "nominal", "sort": "-x", "title":"State"}
-      },
-  "layer":[
-    {
-      "mark":"bar",
-      "title": "Number of Landslides per state"
-    },
-    {
-    "mark": {
-      "type": "text",
-      "align": "left",
-      "fontSize": 12
-    },
-    "encoding": {
-      "text": {"field": "state/province", "type": "quantitative", "aggregate": "count"},
-      "color": {"value": "black"}
-    }}
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {"value": 25},
+        "color": {"field": "landslide_type", "type": "nominal",
+        "scale": {
+          "domain": ["Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
+          "range": ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928"]}
+        },
+        "tooltip": [{"field": "state/province", "type": "nominal"},
+                    {"field": "trigger", "type": "nominal"},
+                    {"field": "distance", "type": "quantitative"}]
+      }
+    }
   ]
 }
+
