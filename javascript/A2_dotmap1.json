@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Landslide Locations in United States",
-  "width": 800,
-  "height": 600,
+  "width": 550,
+  "height": 550,
   "projection": {"type": "albersUsa"},
   "params":[{
   "name": "type_selection",
