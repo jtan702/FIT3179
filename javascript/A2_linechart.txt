@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 500,
+  "title": "Number of landslides over the years",
+  "layer":[
+    {"data": {
+      "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslides.csv"
+      },
+      "transform": [
+        {"filter": { "field": "country_name", "equal": "United States"}},
+        {"filter": {"field": "date", "timeUnit":"year","range":[2007,2015]}}
+      ],
+      "mark":"line",
+      "encoding": {
+        "x": {"timeUnit": "year","field": "date", "type": "ordinal", "title": "Year"},
+        "y": {"field": "date", "aggregate": "count", "title":"Number of landslides"}
+      }
+    }
+  ]
+}
