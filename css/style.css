@@ -1,5 +1,5 @@
 body{
-    background-color: whitesmoke;
+    background-color: #ffffff;
     color: black;    
     font-family:Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -36,11 +36,9 @@ body{
     padding: 5px 4px 5px 4px
 }
 
-#graph-1{
-    border: 1px solid black;
+#dotmap-1{
     flex-basis: 49%;
 }
-#graph-2{
-    border: 1px solid black;
+#choropleth-1{
     flex-basis: 49%;
 }
