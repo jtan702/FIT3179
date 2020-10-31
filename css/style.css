@@ -33,33 +33,32 @@ body{
 #graphContainer-1{
     display: flex;
     justify-content: space-around;
-    padding: 5px 4px 5px 4px
+    padding: 5px 4px 0px 4px
 }
 
 
+
+#dotmap-1{
+    flex-basis: 49%;
+}
+
 #choropleth-1{
     flex-basis: 49%;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
+}
+
+#graphContainer-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 4px 0px 4px
 }
 
 #bar-1{
     flex-basis: 49%;
-    border: 1px solid black;
 }
 
-
-#graphContainer-2{
-    display: flex;
-    border: 1px solid black;
-    align-items: center;
-    justify-content: center;
+#line-1{
+    flex-basis: 49%;
 }
-
-#dotmap-1{
-    flex: 1;
-    border: 1px solid black;
-    justify-content: center;
-}
-
 
 

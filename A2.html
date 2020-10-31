@@ -19,12 +19,12 @@
     </header>
 
     <div id="graphContainer-1"> 
+        <div id="dotmap-1"></div>
         <div id="choropleth-1"></div>
-        <div id="bar-1"></div>        
     </div>
     <div id="graphContainer-2">
-        <div id="dotmap-1"></div>
-        <div id="blank"></div>
+        <div id="line-1"></div>
+        <div id="bar-1"></div>        
     </div>
 
 
@@ -40,6 +40,10 @@
 
         var spec3 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_bar1.json";
         vegaEmbed('#bar-1', spec3).then(function(result) {
+        }).catch(console.error);
+
+        var spec4 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_line1.json";
+        vegaEmbed('#line-1', spec4).then(function(result) {
         }).catch(console.error);
         
       </script>
