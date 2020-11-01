@@ -17,5 +17,6 @@
         "y": {"field": "date", "aggregate": "count", "title":"Number of landslides"}
       }
     }
-  ]
+  ],
+  "view": {"stroke": null}
 }

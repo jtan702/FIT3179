@@ -43,6 +43,7 @@
                     {"field": "distance", "type": "quantitative"}]
       }
     }
-  ]
+  ],
+  "view": {"stroke": null}
 }
 

@@ -27,5 +27,6 @@
       "text": {"field": "state/province", "type": "quantitative", "aggregate": "count"},
       "color": {"value": "black"}
     }}
-  ]
+  ],
+  "view": {"stroke": null}
 }
