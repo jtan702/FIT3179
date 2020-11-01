@@ -1,0 +1,13 @@
+type,Construction,Continuous rain,Dam embankment collapse,Downpour,Earthquake,Flooding,Freeze thaw,Mining digging,Other,Rain,Snowfall snowmelt,Tropical cyclone,Unknown,Volcano
+Complex,0,1,0,15,0,0,1,0,0,4,0,0,0,0
+Creep,0,1,0,3,0,0,0,0,0,0,1,0,0,0
+Debris flow,0,0,0,26,0,0,0,0,0,9,0,0,0,0
+Lahar,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Landslide,2,29,0,179,0,4,0,3,1,112,1,6,38,0
+Mudslide,0,25,0,290,0,2,1,0,0,140,8,5,17,0
+Other,0,1,0,0,0,0,0,0,0,4,0,0,1,0
+Riverbank collapse,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Rockfall,0,1,0,18,1,0,3,0,0,11,1,0,14,0
+Rockslide,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Snow avalanche,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+Unknown,0,0,0,0,0,0,0,0,0,0,0,0,1,0
