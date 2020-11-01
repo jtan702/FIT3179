@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title":"Trigger make up of different landslide types",
+  "height": 550,
+  "width": 550,
+  "data": {"url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/triggersPerType.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "count", "type": "quantitative", "aggregate":"sum"},
+    "y": {"field": "type", "type": "nominal"},
+    "color": {"field": "trigger", "type": "nominal",
+    "scale":{"domain":["Construction", "Continuous rain", "Dam embankment collapse", "Downpour", "Flooding", "Freeze thaw","Mining digging", "Other", "Rain", "Snowfall snowmelt", "Tropical cyclone","Unknown"], 
+    "range":["#8dd3c7", "#ffffb3", "#bebada", "#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]}},
+    "tooltip":[{"field":"trigger","type":"nominal"},
+      {"field":"count","type":"quantitative"}]
+  },
+  "view": {"stroke": null}
+}
+
