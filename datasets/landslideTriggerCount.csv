@@ -1,15 +1,14 @@
-"","landslide$trigger","n"
-"1","Construction",5
-"2","Continuous rain",95
+"","us$trigger","n"
+"1","Construction",2
+"2","Continuous rain",58
 "3","Dam embankment collapse",1
-"4","Downpour",866
-"5","Earthquake",8
-"6","Flooding",10
-"7","Freeze thaw",6
-"8","Mining digging",7
-"9","Other",3
-"10","Rain",446
+"4","Downpour",531
+"5","Earthquake",1
+"6","Flooding",6
+"7","Freeze thaw",5
+"8","Mining digging",3
+"9","Other",2
+"10","Rain",280
 "11","Snowfall snowmelt",11
-"12","Tropical cyclone",131
-"13","Unknown",102
-"14","Volcano",1
+"12","Tropical cyclone",11
+"13","Unknown",74

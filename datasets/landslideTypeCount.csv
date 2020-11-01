@@ -1,13 +1,13 @@
-"","landslide$landslide_type","n"
-"1","Complex",48
+"","us$landslide_type","n"
+"1","Complex",21
 "2","Creep",5
-"3","Debris flow",38
-"4","Lahar",2
-"5","Landslide",867
-"6","Mudslide",638
-"7","Other",14
-"8","Riverbank collapse",5
-"9","Rockfall",70
+"3","Debris flow",35
+"4","Lahar",1
+"5","Landslide",375
+"6","Mudslide",488
+"7","Other",6
+"8","Riverbank collapse",1
+"9","Rockfall",49
 "10","Rockslide",1
 "11","Snow avalanche",2
-"12","Unknown",2
+"12","Unknown",1
