@@ -1,183 +1,42 @@
 type,trigger,count
-Complex,Construction,0
 Complex,Continuous rain,1
-Complex,Dam embankment collapse,0
 Complex,Downpour,15
-Complex,Earthquake,0
-Complex,Flooding,0
 Complex,Freeze thaw,1
-Complex,Mining digging,0
-Complex,Other,0
 Complex,Rain,4
-Complex,Snowfall snowmelt,0
-Complex,Tropical cyclone,0
-Complex,Unknown,0
-Complex,Volcano,0
-Creep,Construction,0
 Creep,Continuous rain,1
-Creep,Dam embankment collapse,0
 Creep,Downpour,3
-Creep,Earthquake,0
-Creep,Flooding,0
-Creep,Freeze thaw,0
-Creep,Mining digging,0
-Creep,Other,0
-Creep,Rain,0
 Creep,Snowfall snowmelt,1
-Creep,Tropical cyclone,0
-Creep,Unknown,0
-Creep,Volcano,0
-Debris flow,Construction,0
-Debris flow,Continuous rain,0
-Debris flow,Dam embankment collapse,0
 Debris flow,Downpour,26
-Debris flow,Earthquake,0
-Debris flow,Flooding,0
-Debris flow,Freeze thaw,0
-Debris flow,Mining digging,0
-Debris flow,Other,0
 Debris flow,Rain,9
-Debris flow,Snowfall snowmelt,0
-Debris flow,Tropical cyclone,0
-Debris flow,Unknown,0
-Debris flow,Volcano,0
-Lahar,Construction,0
-Lahar,Continuous rain,0
 Lahar,Dam embankment collapse,1
-Lahar,Downpour,0
-Lahar,Earthquake,0
-Lahar,Flooding,0
-Lahar,Freeze thaw,0
-Lahar,Mining digging,0
-Lahar,Other,0
-Lahar,Rain,0
-Lahar,Snowfall snowmelt,0
-Lahar,Tropical cyclone,0
-Lahar,Unknown,0
-Lahar,Volcano,0
 Landslide,Construction,2
 Landslide,Continuous rain,29
-Landslide,Dam embankment collapse,0
 Landslide,Downpour,179
-Landslide,Earthquake,0
 Landslide,Flooding,4
-Landslide,Freeze thaw,0
 Landslide,Mining digging,3
 Landslide,Other,1
 Landslide,Rain,112
 Landslide,Snowfall snowmelt,1
 Landslide,Tropical cyclone,6
 Landslide,Unknown,38
-Landslide,Volcano,0
-Mudslide,Construction,0
 Mudslide,Continuous rain,25
-Mudslide,Dam embankment collapse,0
 Mudslide,Downpour,290
-Mudslide,Earthquake,0
 Mudslide,Flooding,2
 Mudslide,Freeze thaw,1
-Mudslide,Mining digging,0
-Mudslide,Other,0
 Mudslide,Rain,140
 Mudslide,Snowfall snowmelt,8
 Mudslide,Tropical cyclone,5
 Mudslide,Unknown,17
-Mudslide,Volcano,0
-Other,Construction,0
 Other,Continuous rain,1
-Other,Dam embankment collapse,0
-Other,Downpour,0
-Other,Earthquake,0
-Other,Flooding,0
-Other,Freeze thaw,0
-Other,Mining digging,0
-Other,Other,0
 Other,Rain,4
-Other,Snowfall snowmelt,0
-Other,Tropical cyclone,0
 Other,Unknown,1
-Other,Volcano,0
-Riverbank collapse,Construction,0
-Riverbank collapse,Continuous rain,0
-Riverbank collapse,Dam embankment collapse,0
-Riverbank collapse,Downpour,0
-Riverbank collapse,Earthquake,0
-Riverbank collapse,Flooding,0
-Riverbank collapse,Freeze thaw,0
-Riverbank collapse,Mining digging,0
-Riverbank collapse,Other,0
-Riverbank collapse,Rain,0
-Riverbank collapse,Snowfall snowmelt,0
-Riverbank collapse,Tropical cyclone,0
 Riverbank collapse,Unknown,1
-Riverbank collapse,Volcano,0
-Rockfall,Construction,0
 Rockfall,Continuous rain,1
-Rockfall,Dam embankment collapse,0
 Rockfall,Downpour,18
-Rockfall,Earthquake,0
 Rockfall,Flooding,3
-Rockfall,Freeze thaw,0
-Rockfall,Mining digging,0
-Rockfall,Other,0
 Rockfall,Rain,11
 Rockfall,Snowfall snowmelt,1
-Rockfall,Tropical cyclone,0
 Rockfall,Unknown,14
-Rockfall,Volcano,0
-Rockslide,Construction,0
-Rockslide,Continuous rain,0
-Rockslide,Dam embankment collapse,0
-Rockslide,Downpour,0
-Rockslide,Earthquake,0
-Rockslide,Flooding,0
-Rockslide,Freeze thaw,0
-Rockslide,Mining digging,0
-Rockslide,Other,0
-Rockslide,Rain,0
-Rockslide,Snowfall snowmelt,0
-Rockslide,Tropical cyclone,0
 Rockslide,Unknown,1
-Rockslide,Volcano,0
-Snow avalanche,Construction,0
-Snow avalanche,Continuous rain,0
-Snow avalanche,Dam embankment collapse,0
-Snow avalanche,Downpour,0
-Snow avalanche,Earthquake,0
-Snow avalanche,Flooding,0
-Snow avalanche,Freeze thaw,0
-Snow avalanche,Mining digging,0
 Snow avalanche,Other,1
-Snow avalanche,Rain,0
-Snow avalanche,Snowfall snowmelt,0
-Snow avalanche,Tropical cyclone,0
 Snow avalanche,Unknown,1
-Snow avalanche,Volcano,0
-Unknown,Construction,0
-Unknown,Continuous rain,0
-Unknown,Dam embankment collapse,0
-Unknown,Downpour,0
-Unknown,Earthquake,0
-Unknown,Flooding,0
-Unknown,Freeze thaw,0
-Unknown,Mining digging,0
-Unknown,Other,0
-Unknown,Rain,0
-Unknown,Snowfall snowmelt,0
-Unknown,Tropical cyclone,0
-Unknown,Unknown,1
-Unknown,Volcano,0
-Unknown,Construction,0
-Unknown,Continuous rain,0
-Unknown,Dam embankment collapse,0
-Unknown,Downpour,0
-Unknown,Earthquake,0
-Unknown,Flooding,0
-Unknown,Freeze thaw,0
-Unknown,Mining digging,0
-Unknown,Other,0
-Unknown,Rain,0
-Unknown,Snowfall snowmelt,0
-Unknown,Tropical cyclone,0
-Unknown,Unknown,1
-Unknown,Volcano,0
