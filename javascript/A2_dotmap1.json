@@ -4,6 +4,7 @@
   "width": 550,
   "height": 550,
   "projection": {"type": "albersUsa"},
+  "config": {"legend":{"fillColor":"lightgrey","padding":10, "strokeColor":"black"}},
   "params":[{
   "name": "type_selection",
   "bind": {
@@ -46,4 +47,5 @@
   ],
   "view": {"stroke": null}
 }
+
 
