@@ -3,7 +3,7 @@
   "title":"Proportion of Triggers for Different Landslide Types",
   "config": {"legend":{"fillColor":"lightgrey","padding":10, "strokeColor":"black", "cornerRadius":10}},
   "height": 500,
-  "width": 500,
+  "width": 550,
   "data": {"url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/triggersPerType.csv"},
   "mark": "bar",
   "encoding": {
