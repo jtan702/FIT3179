@@ -10,7 +10,10 @@
   "transform": [{"calculate": "(datum.n/985)*100", "as": "ratio"}],
   "encoding": {
     "theta": {"field": "n", "type": "quantitative", "sort": "descending"},
-    "color": {"field": "us$landslide_type", "type": "nominal", "title": "Landslide type"},
+    "color": {"field": "us$landslide_type", "type": "nominal", "title": "Landslide type",
+    "scale": {
+          "domain": ["Complex","Creep","Debris flow","Lahar","Landslide","Mudslide","Riverbank collapse","Rockfall","Rockslide","Snow avalanche","Other","Unknown"],
+          "range": ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928"]}},
     "tooltip":[{"field": "us$landslide_type", "type": "nominal", "title": "Type"},
               {"field": "ratio", "type": "quantitative", "title": "Percent"}]
   },
