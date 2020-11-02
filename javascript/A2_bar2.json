@@ -7,7 +7,7 @@
   "data": {"url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/triggersPerType.csv"},
   "mark": "bar",
   "encoding": {
-    "x": {"field": "count", "type": "quantitative", "aggregate":"sum", "title": "Number of landslides"},
+    "x": {"field": "count", "type": "quantitative", "aggregate":"sum", "title": "Number of Landslides"},
     "y": {"field": "type", "type": "nominal", "title": "Type of Landslide"},
     "color": {"field": "trigger", "type": "nominal", "title": "Type of Trigger",
     "scale":{"domain":["Construction", "Continuous rain", "Dam embankment collapse", "Downpour", "Flooding", "Freeze thaw","Mining digging", "Other", "Rain", "Snowfall snowmelt", "Tropical cyclone","Unknown"], 
