@@ -4,7 +4,7 @@
   "width": 550,
   "height": 550,
   "projection": {"type": "albersUsa"},
-  "config": {"legend":{"fillColor":"lightgrey","padding":10, "strokeColor":"black"}},
+  "config": {"legend":{"fillColor":"lightgrey","padding":10, "strokeColor":"black", "cornerRadius":10}},
   "params":[{
   "name": "type_selection",
   "bind": {
