@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 550,
+  "height": 550,
+  "config": {"legend":{"fillColor":"lightgrey","padding":10, "strokeColor":"black"}},
+  "title": "Number of Landslides per State",
+  "layer":[{"data": {
+        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/usa_map.topojson",
+        "format": {"type": "topojson", "feature": "usa_map"}},
+        "projection": {"type": "albersUsa"},
+        "mark": {"type": "geoshape", "fill": "#fee5d9", "stroke": "black"},
+        "encoding": {"tooltip":[{"field":"properties.name", "type": "nominal","title":"State"}]}
+	    },
+		{"data": {
+        "url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/usa_map.topojson",
+        "format": {"type": "topojson", "feature": "usa_map"}},
+		"transform": [{"lookup": "properties.name",
+		  "from": {
+          "data": {"url": "https://raw.githubusercontent.com/jtan702/FIT3179/master/datasets/landslide_count.csv"},
+          "key": "NAME",
+          "fields": ["COUNT"]}}],
+		"projection": {"type": "albersUsa"},
+		"mark": {"type": "geoshape", "stroke": "black"},
+		"encoding": {"color": {
+           "field": "COUNT", 
+           "type": "quantitative",
+           "title": "Number of Landslides",
+           "scale":{"type": "threshold",
+              "domain": [20,40,60,80,100],
+              "range": ["#fee5d9","#fcbba1","#fc9272","#fb6a4a","#de2d26","#a50f15"]}},
+              "tooltip":[{"field":"properties.name", "type": "nominal","title":"State"},
+                          {"field": "COUNT", "type": "quantitative", "title": "Number"}]}
+		}],
+  "view": {"stroke": null}
+}
