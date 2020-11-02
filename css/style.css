@@ -2,17 +2,18 @@ body{
     background-color: #ffffff;
     color: black;    
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.6em;
     margin: 0;
 }
-.container{
+#headerContainer{
     margin: auto;
     overflow: hidden;
+    border: 2px dashed black;
 }
 
 #main-header{
-    background-color: darkgray;
+    background-color: grey;
     color: white;
     text-align: center;
     margin: 0;
@@ -29,36 +30,165 @@ body{
     font-size: 16px;
     line-height: 2px;
 }
+/*
+#layout{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+#layout > div{
+    border: 2px solid black;
+}
+*/
+
+.textWrapper{
+    justify-content: center;
+}
+
+#text-1{
+    margin: auto;
+    overflow: hidden;
+    font: arial;
+    font-style: oblique;
+    width: 90%
+}
+
+.graphWrapper{
+    justify-content: center;
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#graphHeader-1{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
 
 #graphContainer-1{
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 4px 0px 4px
-}
-
-
-
-#dotmap-1{
-    flex-basis: 49%;
-}
-
-#choropleth-1{
-    flex-basis: 49%;
-/*    border: 1px solid black;*/
-}
-
-#graphContainer-2{
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 4px 0px 4px
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1 fr;
+    padding: 10px 10px 0px 10px;
 }
 
 #bar-1{
-    flex-basis: 49%;
+    margin-right: 5px;
 }
 
-#line-1{
-    flex-basis: 49%;
+#choropleth-1{
+    margin-left: 5px;
 }
+
+#text-2{
+    margin: auto;
+    overflow: hidden;
+    border: 2px dashed black;
+    border-radius: 10px;
+    font: arial;
+    width: 90%;
+    padding: 0px 10px 0px 10px;
+}
+
+#graphHeader-2{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+#graphContainer-2{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    padding: 10px 10px 0px 10px;
+}
+
+#graphContainer-2 > div{
+    margin: auto;
+}
+
+/*
+#dotmap-1{
+}
+*/
+
+#text-3{
+    margin: auto;
+    align-self: center;
+    overflow: hidden;
+    border: 2px dashed black;
+    border-radius: 10px;
+    font: arial;
+    width: 90%;
+    padding: 0px 10px 0px 10px;
+}
+
+#graphHeader-3{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+#text-4{
+    margin: auto;
+    align-self: center;
+    overflow: hidden;
+    border: 2px dashed black;
+    border-radius: 10px;
+    font: arial;
+    width: 90%;
+    padding: 0px 10px 0px 10px;
+}
+
+
+#graphContainer-3{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    padding: 10px 10px 0px 10px;
+}
+
+#graphContainer-3 > div{
+    margin: auto;
+}
+
+
+/*
+#pie-1{
+    border: 1px solid black;
+}
+*/
+#graphContainer-4{
+    display: grid;
+    grid-template-columns: 0.2fr 4fr 2fr 0.5fr;
+    padding: 10px 10px 0px 10px;
+}
+
+#graphContainer-4 > div{
+    margin: auto;
+}
+
+#text-5{
+    margin: auto;
+    align-self: center;
+    overflow: hidden;
+    border: 2px dashed black;
+    border-radius: 10px;
+    font: arial;
+    width: 90%;
+    padding: 0px 10px 0px 10px;
+}
+
+/*
+#bar-2{
+    overflow: hidden;
+}
+*/
+
 
 

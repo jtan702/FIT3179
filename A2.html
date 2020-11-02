@@ -12,22 +12,109 @@
 <body>
     
     <header id="main-header">
-        <div class="container">
+        <div id="headerContainer">
             <h1>Landslides across United States</h1>
             <small id="author">Visualisation by Tan Jiajun</small>
         </div>
     </header>
 
-    <div id="graphContainer-1"> 
-        <div id="dotmap-1"></div>
-        <div id="choropleth-1"></div>
-    </div>
-    <div id="graphContainer-2">
-        <div id="line-1"></div>
-        <div id="bar-1"></div>        
-    </div>
+    <div id = "layout">
+        <div id= "sidebar"></div>
+        <div id= "main">
+
+            <div class = "textWrapper" >
+                <div id = "text-1">
+                    <p>A landslide is a geological process in which gravity causes movement of masses of rock, debris, or earth down a slope. Besides gravity, landslides can have multiple triggers. These include rainfall, earthquakes, and even human modifications. Landslides are considered a serious hazard, common to almost every State in United States. This visualisation aims to bring awareness and understanding to its readers about the potential exposure to landslides, using landslide data collected from 2007 to 2015.</p>    
+                </div>                
+            </div>
+    
+            <div class = "graphWrapper">
+                <div id = "graphHeader-1">
+                    <h1>Exploring Landslide Frequencies Across United States</h1>
+                </div>
+            </div>
+
+            <div id="graphContainer-1"> 
+                <div id="choropleth-1"></div>
+                <div id="bar-1"></div>        
+            </div>   
+
+            <div class = "textWrapper" >
+                <div id = "text-2">
+                    <p>When observing the number of landslides occurrences across United States from 2007 to 2015, we see that Kentucky and Colorado are leading, having over 100 landslide occurrences. This is followed by Pennsylvania, West Virginia, having over 80 occurrences. These states encompass areas of hilly terrain and large mountainous areas. At regions as such, there is lesser stability in the rocks, earth, and solid debris.</p>
+                </div>                
+            </div>       
+
+            <div class = "graphWrapper">
+                <div id = "graphHeader-2">
+                    <h1>Exploring the Distribution of Landslides Across United States</h1>
+                </div>
+            </div>
+
+            <div id="graphContainer-2">
+
+                <div></div>
+
+                <div>
+                    <div class = "textWrapper" >
+                        <div id = "text-3">
+                            <p>Landslide hazards can be classified as different types according to the forming of their materials and the type of movement which causes them. </p>
+                            <p>The recorded types of landslide include complex, creep, debris flow, lahar, landslide, mudslide, riverbank collapse, rockfall, rockslide, and snow avalanche. Note that some landslides fall under the category of other and unknown as they could not be properly classified.</p>
+                            <p>The following dot map explores the distribution of the landslides across the United States. You may click on the drop-down box to select a filter to change the different types of landslides to be displayed.</p>
+                        </div>                
+                    </div>    
+                </div>
+
+                <div id="dotmap-1"></div>
+
+                <div></div>
+
+            </div>
+
+            <div class = "graphWrapper">
+                <div id = "graphHeader-3">
+                    <h1>Percentage of Landslide types and their Triggers</h1>
+                </div>
+            </div>
+
+            <div id="graphContainer-3">
+                <div></div>
+
+                <div class = "textWrapper" >
+                    <div id = "text-4">
+                        <p>Observing the map above, it can be said that landslides and mudslides are more common than the others. Here is the proportion of all the different recorded landslide types compared against each other.</p>    
+                        <br>
+                        <p>What is the difference between landslides and mudslides and why are they so common?</p>
+                        <p>Landslides are caused by disturbances in the natural stability of the slope. They can be accompany heavy rains or follow droughts, and earthquakes. </p>
+                        <p>Mudslides on the other hand are caused when water rapidly accumulates in the ground and results in a surge of water-saturated rock, earth, and debris. </p>
+                    </div>                
+                </div>   
+
+                <div id="pie-1"></div>
+
+                <div></div>
+            </div>
+
+            <div id="graphContainer-4">
+
+                <div></div>
+
+                <div id="bar-2"></div>
+
+                <div class = "textWrapper" >
+                    <div id = "text-5">
+                        <p>The stacked bar chart breaks down each landslide type by their trigger. The triggers are the events considered to be the main cause of the landslide. </p>
+                        <p>Observe how large proportion of triggers are some form of rainfall: continuous rain, downpour, rain. The difference among these three triggers is that rain is the lightest form of rainfall, followed by downpour which is heavy rain. Continuous rain refers to steady rain that lasts for several hours, or even days.</p>    
+                    </div>                
+                </div>  
+
+                <div></div>
+
+            </div>
 
 
+        </div>
+    </div>
     <script type="text/javascript">
 
         var spec1 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_dotmap1.json";
@@ -42,8 +129,12 @@
         vegaEmbed('#bar-1', spec3).then(function(result) {
         }).catch(console.error);
 
-        var spec4 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_line1.json";
-        vegaEmbed('#line-1', spec4).then(function(result) {
+        var spec4 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_bar2.json";
+        vegaEmbed('#bar-2', spec4).then(function(result) {
+        }).catch(console.error);
+
+        var spec5 = "https://raw.githubusercontent.com/jtan702/FIT3179/master/javascript/A2_pie1.json";
+        vegaEmbed('#pie-1', spec5).then(function(result) {
         }).catch(console.error);
         
     </script>
